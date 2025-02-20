@@ -4,10 +4,10 @@
   "main": "index.js",
   "scripts": {
     "dev": "tsx watch --env-file=.env src/server.ts",
-    "build": "tsup-node",
+    "build": "tsup",
     "db:generate": "drizzle-kit generate",
     "db:migrate": "drizzle-kit migrate",
-    "start": "node dist/server.mjs"
+    "start": "node --no-warnings=ExperimentalWarning ./dist/server.mjs"
   },
   "dependencies": {
     "@fastify/cors": "^10.0.2",

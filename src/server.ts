@@ -18,7 +18,7 @@ import { getRankingRoute } from './routes/getRankingRoute'
 
 const app = fastify().withTypeProvider<ZodTypeProvider>()
 
-app.listen({ port: env.PORT }).then(() => {
+app.listen({ port: env.PORT, host: '0.0.0.0' }).then(() => {
   console.log('Server running!')
 })
 

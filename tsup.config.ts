@@ -6,5 +6,8 @@ export default defineConfig({
     ],
     format: 'esm',
     outDir: './dist',
-    clean: true
+    clean: true,
+    target: 'node20',
+    splitting: false,
+    minify: true
 })
