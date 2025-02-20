@@ -1,0 +1,24 @@
+POST http://localhost:3333/subscriptions
+Content-Type: application/json
+
+{
+    "name": "Indicado5",
+    "email": "indicado5@gmail.com", 
+    "referrer":"7640bb22-3c42-470f-872d-2bb2a5569e8f"
+}
+
+###
+
+GET http://localhost:3333/invites/2b8d880e-bf39-4569-97ac-9611d5aca122
+
+###
+GET http://localhost:3333/subscribers/2b8d880e-bf39-4569-97ac-9611d5aca122/ranking/clicks
+
+###
+GET http://localhost:3333/subscribers/2b8d880e-bf39-4569-97ac-9611d5aca122/ranking/count
+
+###
+GET http://localhost:3333/subscribers/2b8d880e-bf39-4569-97ac-9611d5aca122/ranking/placement
+
+###
+GET http://localhost:3333/ranking
